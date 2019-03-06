@@ -98,8 +98,6 @@ class FactoryDaemon {
 
     if (!options.disposable) {
       const nonDisposableConfig = clone(defaultConfig)
-      options.init = false
-      options.start = false
 
       const defaultRepo = path.join(
         process.env.HOME || process.env.USERPROFILE,

@@ -85,8 +85,6 @@ class FactoryInProc {
       options.config = defaults({}, options.config, defaultConfig)
     } else {
       const nonDisposableConfig = clone(defaultConfig)
-      options.init = false
-      options.start = false
 
       const defaultRepo = path.join(
         process.env.HOME || process.env.USERPROFILE || '',
